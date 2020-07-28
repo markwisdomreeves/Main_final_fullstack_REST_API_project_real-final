@@ -4,7 +4,7 @@ The project allows a user to signup before creating a course, deleting a course 
 
 ## These are the Technologies that I used in this project
 * FOR REST API, DATABASE OR BACKEND: JavaScript, Node, Express, Sequelize, SQLite
-* FOR CLIENT SIZE OR UI : JavaScript, React, Axios
+* FOR CLIENT SIZE OR UI : React, Axios
 
 
 ## Start the REST API
