@@ -7,7 +7,7 @@ The project allows a user to signup before creating a course, deleting a course 
 * FOR CLIENT SIZE OR UI : JavaScript, React, Axios
 
 
-## Start the API
+## Start the REST API
 Run the following commands from the api folder:
 
 Firstly, install the project's dependencies using `npm`.
