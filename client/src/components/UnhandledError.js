@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 
-function UnhandledError() {
+function UnhandledError () {
+
     return (
         <div className="bounds centered">
             <h1 className="error-page-header">

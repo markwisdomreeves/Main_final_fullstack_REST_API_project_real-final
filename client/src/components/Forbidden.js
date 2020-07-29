@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 //To use when the requested course to edit or delete aren't owned by the user
 function Forbidden () {
+    
     return (
         <Fragment>
             <div className="actions--bar">

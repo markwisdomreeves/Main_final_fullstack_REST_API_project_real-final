@@ -2,9 +2,9 @@ import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import "../styles/global.css";
 
-export default class Header extends React.PureComponent {
-    render() {
-        const { context } = this.props;
+
+export default ({ context }) => {
+
         const authUser = context.authenticatedUser;
 
         return (
@@ -12,8 +12,9 @@ export default class Header extends React.PureComponent {
                 <div className="bounds">
                     <h1 className="header--logo responsive-header-text"><Link to={"/"}>REST API</Link></h1>
                     <nav id="signin_and_signup">
-                         {/* If the the authenticatedUser from context is not null, the Header is changed to welcome the user and display the sign out button.
-                          If the authenticatedUser is null, the sign up and sign in buttons are rendered. */}
+                         {/* If the authenticatedUser that is from the context API file is not null, the Header should change to welcome 
+                         the user and display the sign out button.
+                         But If the authenticatedUser is null, the sign up and sign in buttons are rendered, that means, they will not change. */}
                         {authUser ?
                             <Fragment>
                                 <span>Welcome, {authUser.firstName}!</span>
@@ -33,5 +34,7 @@ export default class Header extends React.PureComponent {
                 </div>
             </div>
         );
-    };
 };
+
+
+
